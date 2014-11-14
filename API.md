@@ -1,8 +1,8 @@
 # Data Plan Info API
-*{aterzis, igrigorik, cbentzel}@google.com*
-*{sicking, mcaceres}@mozilla.com*
-*nrooney@gsma.com*
-*Last update: 11/14/14*
+*{aterzis, igrigorik, cbentzel}@google.com*  
+*{sicking, mcaceres}@mozilla.com*  
+*nrooney@gsma.com*  
+*Last update: 11/14/14*  
 
 Many users are price sensitive and have limited cost and data budgets to access online services. This is especially true in developing markets, where data costs are high and data budgets are low - e.g. many users end up juggling multiple plans via multiple SIMs and across different providers. Those same users often end up disabling data access on their devices altogether, because (a) they don’t trust the applications to respect their budget, and (b) they don’t have visibility into the status of their plan - e.g. bytes remaining, type of contract, etc.
 
