@@ -29,14 +29,16 @@ We propose a standard Data Plan Status API that would be implemented by the carr
 3. The client issues a query for its data plan information against the provided URL contained in the response from the previous step.
 4. Carrier API responds with a JSON object that contains information about the user's data plan in a defined format. Details of this format needs to be figured out in order to address the range of plans that are out there. But it could look something like:
 
-```{
-  "status": "active",  // values: active, overquota, disabled, roaming
-  "type": "recurring", // values: pay-as-you-go, recurring, ... 
-  "reset_time": "Mon, 1 Sept 2014 00:00:00 GMT", // RFC 1123 Time Format
-  "shared": true,                                // e.g. family plan
-  "remaining_bytes": 8000000
-  … 
-}```
+```
+{
+  "status": "active",  // values: active, overquota, disabled, roaming  
+  "type": "recurring", // values: pay-as-you-go, recurring, ...   
+  "reset_time": "Mon, 1 Sept 2014 00:00:00 GMT", // RFC 1123 Time Format  
+  "shared": true,                                // e.g. family plan  
+  "remaining_bytes": 8000000  
+  …   
+}  
+```
 
 The above response would indicate that:
 * The user’s plan is in good standing (“active”)
