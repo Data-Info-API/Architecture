@@ -57,8 +57,8 @@ silent sms on ffos
 ### Operator FAQ
 Operators are likely to receieve a number of questions related to this API and how it works. Below is a list of the expected questions and some answers
 * __How does Authentication work?:__
-* __Sharing user's data is against our privacy guidelines. How does the Data Info API ensure this?:__ The Data Info API is only interested in returning the user's Data Plan information back to the user or the operating system they are using. It does not intend to share this information with a third party or to be retained for use outside of the ... COMPLETE ME!
-
-
+* __Sharing user's data is against our privacy guidelines. How does the Data Info API ensure this?:__ The Data Info API is only interested in returning the user's Data Plan information back to the user or the operating system they are using. Exposure to other parties only includes:
+ * What is the user's current connection bandwidth. Right now, if the user is on an 3G connection, we always indicate that it's a 3G connection to apps. However if the user's connection speed has been downgraded due to exceeding monthly data limits and the carrier effectively only allows transmission at 2G speed, we'd like to tell applications that the device is currently using 2G connection. Other forms of downgrades unrelated to the user's plan (for example a temporarily overloaded network) would not affect what we want to return. I.e. there's no information about when this connection speed might change. Nor do we plan to tell websites that the user is on a downgraded 3G connection. We simply plan to tell them that the user is on a 2G connection.
+ * We have debated exposing the fact that the user is not on an unlimited data plan. I.e. expose the fact that the user is paying *something* per transferred byte. We don't plan to expose how much the user is paying, or what the various limits of the plan are. Just that it isn't free. This to enable websites to ask the user if it's ok before transferring a large file, like a video.
 
 
