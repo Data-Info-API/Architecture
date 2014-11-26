@@ -3,17 +3,18 @@
 ## This Document
 This document will detail a route to implement the Data Info API on the Operator side. This will look at issues, likely questions, a brief architecture and other related items.
 
-## API
-APIs needed are listed below.
+### Each Operator is Different
+We understand that each operator is different and any system given below will not be compatible will all operators. Saying this, operators should feel free to use this information as a guideline on how such a system could work, and also should feel free to suggest edits where needed by issueing a Pull Request. 
 
-### Type Of API
-Browser could happen, but device api is easier
+## APIs
+This project's goal is to develop an API for use on web applications and operating systems. For this to work a number of APIs will need to be developed which will integrate with mobile network operator systems. Below is a description of each.
 
-### APIs Needed
 Three APIs will be needed:
-* web apis
-* device api
-* carrier api
+* Web apis - PLEASE ADD
+* Device api - PLEASE ADD
+* Carrier api - PLEASE ADD
+
+Note: Browser could happen, but device api is easier
 
 ## Issues
 Brain dump of issues, need to clean this up:
