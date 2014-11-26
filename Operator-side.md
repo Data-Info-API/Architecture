@@ -9,40 +9,50 @@ We understand that each operator is different and any system given below will no
 ## APIs
 This project's goal is to develop an API for use on web applications and operating systems. For this to work a number of APIs will need to be developed which will integrate with mobile network operator systems. Below is a description of each.
 
-Three APIs will be needed:
-* Web apis - PLEASE ADD
-* Device api - PLEASE ADD
-* Carrier api - PLEASE ADD
+__Three APIs will be needed:__
+* __Web APIs:__  PLEASE ADD
+* __Device API:__ PLEASE ADD
+* __Carrier API:__ - PLEASE ADD
 
 Note: Browser could happen, but device api is easier
 
 ## Issues
-Brain dump of issues, need to clean this up:
+As stated above every operator is different, so a number of hurdles may need to be jumped to achieve this goal. Saying this, the Data Info API will standardise the APIs syntax and expected functionality, but not it's implementation. Therefore, each operator could implement their end in a different way. Invisioned issues are listed below to help create an API which can achieve this goal.
 
-### Delays
-5 mins delay common
+__Billing System Issues:__
+* __Operator Billing Systems__: are often highly bespoke and do not necessarily have the capabilities to work out a live snapshot of the data plan usage.
+* __Complexity:__ Billing systems are often quite segregated in the IT infrastructure of the operator therefore finding a way to them could be complex and adding the server side capability could take some time 
+* __Security:__ Operators must make sure that any route to the billing system is safe from attacks (e.g. DDoS)
+* __Account Types and Separate Billing Systems:__ There can be separate billing systems for pre-pay and post-pay customers. 
+There are EU controls on roaming data price/ volume caps which can also come into play.
+* __Bill shock:__ Need to make sure the user’s bill then matches the costs which are showing on their device as an outcome of the Data Info API. 
 
-### Data Plan Cases
-* Roaming
- * could be more instantaneous if you’re roaming
- * roaming use case - depends on the foreign carrier, some up to date, some just get a CSV 3 days later
- * international roaming versus US roaming
-* Pre pay 
+__Legal Issues:__
+* __Legal__: Some countries might think the information about plans/ balances is protected by data protection (i.e. knowing you only have a pre-pay account might make you a higher credit risk).
+
+__Device Based Issues:__
+* Which device:__ In certain use cases e.g. Personal hotspot, MiFi devices where the application could be running on a device with its own SIM but using a (private or shared) mobile data connection with a different SIM. So if you run the query should you get results for which device?
+
+__Time Base Issues:__
+* __Delays:__ There is often a five minute delay for Data Plan information.
+  * __Roaming:__ Could be more instantaneous if the user is roaming, depends on the foreign carrier. Some will be up to date, some just send a CSV three days later!
+  * __Type of Roaming__: international roaming versus US roaming
+
+## Data Plan Types
+There are many types of Data Plans which need to be considered. Below is a non-exhaustive list (trying to become exhaustive!):
+* Pre-pay
+* Post-pay
 * Shared Data Plans
 * Unlimited data
 * Zero-Rating
 
-### Bill shock(!)
-Need to make sure the user’s bill then matches the costs which are showing on their device as an outcome of the Data Info API. 
+For each plan above the designers should also consider __internation roaming__ and __within country roaming__ which can occur for each plan listed above.  
 
 ### Authenticate the customer against the device 
 How do we do this?
 oath could work
 sms could also work
 silent sms on ffos
-
-### Legal
-FCC rules - need to check this
 
 ### Typical Questions Operators will Receive
 * How does Authentication work?
