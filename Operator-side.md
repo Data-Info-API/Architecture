@@ -54,9 +54,10 @@ oath could work
 sms could also work
 silent sms on ffos
 
-### Typical Questions Operators will Receive
-* How does Authentication work?
-* Sharing data - do we want this?
+### Operator FAQ
+Operators are likely to receieve a number of questions related to this API and how it works. Below is a list of the expected questions and some answers
+* __How does Authentication work?:__
+* __Sharing user's data is against our privacy guidelines. How does the Data Info API ensure this?:__ The Data Info API is only interested in returning the user's Data Plan information back to the user or the operating system they are using. It does not intend to share this information with a third party or to be retained for use outside of the ... COMPLETE ME!
 
 
 
