@@ -9,10 +9,14 @@ We understand that each operator is different and any system given below will no
 ## APIs
 This project's goal is to develop an API for use on web applications and operating systems. For this to work a number of APIs will need to be developed which will integrate with mobile network operator systems. Below is a description of each.
 
-__Three APIs will be needed:__
-* __Web APIs:__  PLEASE ADD
-* __Device API:__ PLEASE ADD
-* __Carrier API:__ - PLEASE ADD
+ **Web APIs:**
+Allows a web application to query the current status of the data connection through the navigator object.
+	 
+**Device API:**
+Allows native applications to query the current status of the data connection see p [Windows 8 Networking](http://msdn.microsoft.com/en-gb/library/windows/apps/windows.networking.connectivity.aspx) for an example.
+
+**Carrier API:**
+Allows the browser or Native OS to access information about the cellular subscribers data allowance and current connection via an authenticated request.
 
 Note: Web apis could happen, but a device api is easier
 
