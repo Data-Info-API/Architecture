@@ -30,6 +30,9 @@ There are EU controls on roaming data price/ volume caps which can also come int
 __Legal Issues:__
 * __Legal__: Some countries might think the information about plans/ balances is protected by data protection (i.e. knowing you only have a pre-pay account might make you a higher credit risk).
 
+__Commercial Issues:__
+* __Commercial sensitivity__: An operator may consider the fact that a user is approaching their data cap as commercially sensitive; especially if another entity can use the API to build up a history of how frequently this happens, how frequently the user tops up, etc. An operator may perceive any such abuse of the API as a means to encourage the user to switch services to rival tariffs. 
+
 __Device Based Issues:__
 * Which device:__ In certain use cases e.g. Personal hotspot, MiFi devices where the application could be running on a device with its own SIM but using a (private or shared) mobile data connection with a different SIM. So if you run the query should you get results for which device?
 
