@@ -4,20 +4,26 @@
 This document will detail a route to implement the Data Info API on the Operator side. This will look at issues, likely questions, a brief architecture and other related items.
 
 ### Each Operator is Different
-We understand that each operator is different and any system given below will not be compatible will all operators. Saying this, operators should feel free to use this information as a guideline on how such a system could work, and also should feel free to suggest edits where needed by issueing a Pull Request. 
+We understand that each operator is different and any system given below will not be compatible will all operators. Saying this, operators should feel free to use this information as a guideline on how such a system could work, and also should feel free to suggest edits where needed by issuing a Pull Request. 
 
 ## APIs
 This project's goal is to develop an API for use on web applications and operating systems. For this to work a number of APIs will need to be developed which will integrate with mobile network operator systems. Below is a description of each.
 
-__Three APIs will be needed:__
-* __Web APIs:__  PLEASE ADD
-* __Device API:__ PLEASE ADD
-* __Carrier API:__ - PLEASE ADD
+ **Web APIs:**
+Allows a web application to query the current status of the data connection through the navigator object.
+	 
+**Device API:**
+Allows native applications to query the current status of the data connection see p [Windows 8 Networking](http://msdn.microsoft.com/en-gb/library/windows/apps/windows.networking.connectivity.aspx) for an example.
 
-Note: Browser could happen, but device api is easier
+**Carrier API:**
+Allows the browser or Native OS to access information about the cellular subscribers data allowance and current connection via an authenticated request.
+
+Note: Web apis could happen, but a device api is easier
 
 ## Issues
-As stated above every operator is different, so a number of hurdles may need to be jumped to achieve this goal. Saying this, the Data Info API will standardise the APIs syntax and expected functionality, but not it's implementation. Therefore, each operator could implement their end in a different way. Invisioned issues are listed below to help create an API which can achieve this goal.
+As stated above every operator is different, so a number of hurdles may need to be jumped to achieve this goal. Saying this, the Data Info API will standardise the APIs syntax and expected functionality, but not it's implementation. Therefore, each operator could implement their end in a different way. 
+
+Invisioned issues are listed below to help create an API which can achieve this goal.
 
 __Billing System Issues:__
 * __Operator Billing Systems__: are often highly bespoke and do not necessarily have the capabilities to work out a live snapshot of the data plan usage.
@@ -49,7 +55,7 @@ There are many types of Data Plans which need to be considered. Below is a non-e
 * Unlimited data
 * Zero-Rating
 
-For each plan above the designers should also consider __internation roaming__ and __within country roaming__ which can occur for each plan listed above.  
+For each plan above the designers should also consider __international  roaming__ and __within country roaming__ which can occur for each plan listed above.  
 
 ### Authenticate the customer against the device 
 How do we do this?
