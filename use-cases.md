@@ -1,6 +1,7 @@
 # Use Cases
 
-## This document details use cases for the Data Info API.
+## This Document 
+This document details use cases for the Data Info API.
 
 ## Indicate to the user why they cannot access data
 Right now it's really hard for the user to know if they aren't able to access the internet because they don't have "enough bars", or if it is because they have consumed their allowed amount of data. The device could instead indicate to the user "no connection as your prepaid account is empty. You have to buy more or wait until X in order to get more data access...". This could both reduces the number of customer-service related phone calls, and presents an opportunity to upsell.
