@@ -10,7 +10,7 @@ Right now it's really hard for the user to know if they aren't able to access th
 The same thing could of course be done if the user is throttled rather than have their connection cut off. I.e. the device could display to the user something to the extent of "your internet is slow because X. Do Y in order to fix it".
 
 ## Off Peak Update / Download
-The user may want to allow app updates on mobile networks. A mobile network data could "cost" more during peak hours than on non-peak hours. The operating system could use this information to allow / disallow app updates during peak hours.
+The user may want to allow app updates on mobile networks. A mobile network data could "cost" more during peak hours than on non-peak hours. The operating system could use this information to allow / disallow app updates during peak hours.  Likewise the operating system should know if the concept of peak/off-peak is not applicable for the user, user's tarriff or mobile network  in question.
 
 ## Throttling for streaming in youtube
 A user attempts to stream content from a content streaming site such as youtube or netflix. The user is alerted that they:
