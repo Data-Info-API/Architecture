@@ -31,7 +31,6 @@ We propose a standard Data Plan Status API that would be implemented by the carr
 
 ```
 {
-  "status": "active", // values: active, overquota, disabled, roaming  
   "shared": true, // e.g. family plan  
   "remaining_bytes": 8000000  
   …
