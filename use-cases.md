@@ -1,6 +1,6 @@
 # Use Cases
 
-## This Document 
+## This Document
 This document details use cases for the Data Info API.
 
 ## Indicate to the user why they cannot access data
@@ -21,6 +21,3 @@ A user attempts to stream content from a content streaming site such as youtube 
 
 ## Zero Rating
 Zero rating information could be more clearly displayed to the user allowing them to view or make choices about apps.
-
-## User Account is Running Low
-User could (for example) receive a push notification from the operator when the data on the account is running low. Alternatively (or additionally) the carrier could expose a URL through the API which the user can go to in order to purchase more data; this would mean the data allowance could be displayed at all times (and would mean little need to wait for the user to run low). 
