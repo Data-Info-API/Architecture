@@ -31,12 +31,9 @@ We propose a standard Data Plan Status API that would be implemented by the carr
 
 ```
 {
-  "status": "active",  // values: active, overquota, disabled, roaming  
-  "type": "recurring", // values: pay-as-you-go, recurring, ...   
-  "reset_time": "Mon, 1 Sept 2014 00:00:00 GMT", // RFC 1123 Time Format  
-  "shared": true,                                // e.g. family plan  
+  "shared": true, // e.g. family plan  
   "remaining_bytes": 8000000  
-  …   
+  …
 }  
 ```
 
