@@ -21,3 +21,5 @@ A user attempts to stream content from a content streaming site such as youtube 
 
 ## Zero Rating
 Zero rating information could be more clearly displayed to the user allowing them to view or make choices about apps.
+
+* the app should be able to know whether the data it is consuming is zero-rated (and display an appropriate alert to the user)
